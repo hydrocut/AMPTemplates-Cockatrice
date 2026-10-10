@@ -1,0 +1,4 @@
+# Les scripts sont lus par bash et python3 dans le conteneur : toujours en LF.
+*.sh text eol=lf
+*.py text eol=lf
+*.txt text eol=lf

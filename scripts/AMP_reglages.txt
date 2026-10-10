@@ -1,0 +1,25 @@
+# reglages-amp.txt - ECRIT PAR AMP a chaque demarrage, a partir de AMP_reglages.txt.
+# Ne le modifie pas a la main : change les reglages dans l'onglet Configuration d'AMP.
+# Une ligne cle=valeur, valeur brute jusqu'a la fin de la ligne : le lanceur la lit
+# avec ecrire_config.py et en fait servatrice.ini (guillemets et echappements compris).
+nom_serveur={{nom_serveur}}
+message_accueil={{message_accueil}}
+salon1_nom={{salon1_nom}}
+salon1_description={{salon1_description}}
+salon2_nom={{salon2_nom}}
+salon2_description={{salon2_description}}
+types_parties={{types_parties}}
+comptes={{comptes}}
+mot_de_passe_prive={{mot_de_passe_prive}}
+inscription_obligatoire={{inscription_obligatoire}}
+base_comptes={{base_comptes}}
+administrateurs={{administrateurs}}
+moderateurs={{moderateurs}}
+bdd_hote={{bdd_hote}}
+bdd_nom={{bdd_nom}}
+bdd_utilisateur={{bdd_utilisateur}}
+bdd_mot_de_passe={{bdd_mot_de_passe}}
+max_joueurs={{max_joueurs}}
+connexions_par_ip={{connexions_par_ip}}
+parties_par_joueur={{parties_par_joueur}}
+websocket={{websocket}}

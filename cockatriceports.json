@@ -1,0 +1,16 @@
+[
+    {
+        "Protocol": "TCP",
+        "Port": 4747,
+        "Ref": "ServerPort",
+        "Name": "Port du jeu",
+        "Description": "Port que les joueurs tapent dans Cockatrice (Se connecter au serveur > Port), en TCP. 4747 est le port par defaut du jeu. Ne jamais lui donner 80, 443, 4748 ou 8080 : sur ces ports le jeu essaie le WebSocket et n'arrive pas a se connecter."
+    },
+    {
+        "Protocol": "TCP",
+        "Port": 4748,
+        "Ref": "WebSocketPort",
+        "Name": "Port WebSocket",
+        "Description": "Connexions WebSocket (TCP), si le reglage les accepte. Le jeu sur PC ne s'en sert que si le joueur tape le port 4748 (ou 80, 443, 8080) ; le client web Webatrice s'en sert toujours."
+    }
+]

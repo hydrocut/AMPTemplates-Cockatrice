@@ -1,0 +1,15 @@
+# Ce depot ne contient que le template : Servatrice est telecharge a l'Update depuis
+# les versions GitHub de Cockatrice. Rien de ce qui suit ne doit y entrer.
+servatrice/
+base/
+servatrice.ini
+reglages-amp.txt
+perso.ini
+staff-amp.json
+commande.sql*
+*.sql.gz
+*.cnf
+__pycache__/
+
+# Notes internes de TeamKit (essais, etapes), pas dans le depot public
+FAISABILITE.md
