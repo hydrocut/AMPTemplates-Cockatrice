@@ -284,7 +284,8 @@ def main(argv):
             if not val:
                 refuser('base externe : « %s » est vide.' % quoi)
         if ':' in hote:
-            refuser("adresse MariaDB '%s' : l'adresse seule, sans :port (Servatrice se connecte au port 3306)." % hote)
+            refuser("adresse MariaDB '%s' : l'adresse seule, sans :port (Servatrice se connecte toujours au port 3306 ; "
+                    "la MariaDB TeamKit, sur 34006, n'est pas utilisable : prenez la base intégrée)." % hote)
         a('type=mysql')
         a('prefix=cockatrice')
         a('hostname=' + texte(hote))

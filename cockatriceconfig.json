@@ -182,7 +182,7 @@
         "DisplayName": "MariaDB externe : adresse",
         "Category": "Cockatrice:style",
         "Subcategory": "Comptes:badge:3",
-        "Description": "Seulement en mode « Comptes » avec la base externe. L'adresse du serveur MariaDB, sans port (Servatrice se connecte au 3306). Sur le serveur TeamKit, une instance en conteneur joint la base locale par 172.17.0.1.",
+        "Description": "Seulement en mode « Comptes » avec la base externe. L'adresse du serveur MariaDB, sans port : Servatrice n'a aucun réglage de port et se connecte toujours au 3306. Sur le serveur TeamKit, la MariaDB est joignable depuis une instance en conteneur par 172.17.0.1, mais sur le port 34006 : ce mode ne peut donc pas s'en servir, prenez la base intégrée.",
         "Keywords": "mariadb,mysql,hote,host,base",
         "FieldName": "bdd_hote",
         "InputType": "text",

@@ -97,8 +97,10 @@ libmariadb; tested). First start: `mariadb-install-db`, then the tables from `se
 at start, every hour and at stop: copying `base/` while it runs may give an inconsistent backup,
 the dump never does. Stop: Servatrice first, then a clean MariaDB shutdown.
 
-**External database** (*Base des comptes = externe*): host (no port: Servatrice always uses 3306),
-database, user, password. The start script checks the global `sql_mode` and explains if it is strict.
+**External database** (*Base des comptes = externe*): host (no port: Servatrice has no port setting
+and always uses 3306), database, user, password. On the TeamKit server, MariaDB is reachable from a
+container at 172.17.0.1 but on port **34006**, so this mode cannot use it there: take the integrated
+database. The start script checks the global `sql_mode` and explains if it is strict.
 
 For both: empty database → tables created; older schema → the matching
 `servatrice/migrations/servatrice_NNNN_to_MMMM.sql` are fetched from the installed release's tag
